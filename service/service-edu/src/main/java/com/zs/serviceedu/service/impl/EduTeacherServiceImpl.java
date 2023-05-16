@@ -1,8 +1,8 @@
-package com.zs.service.impl;
+package com.zs.serviceedu.service.impl;
 
-import com.zs.entity.EduTeacher;
-import com.zs.mapper.EduTeacherMapper;
-import com.zs.service.EduTeacherService;
+import com.zs.serviceedu.entity.EduTeacher;
+import com.zs.serviceedu.mapper.EduTeacherMapper;
+import com.zs.serviceedu.service.EduTeacherService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
