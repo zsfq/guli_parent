@@ -48,6 +48,9 @@ public class EduTeacherServiceImpl extends ServiceImpl<EduTeacherMapper, EduTeac
             wrapper.le("gmt_modified", end);   //小于等于
         }
 
+        //排序
+        wrapper.orderByDesc("gmt_create");
+
         //带上门判断后的条件进行分页查询
         baseMapper.selectPage(pageParam, wrapper);
     }

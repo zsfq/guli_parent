@@ -21,6 +21,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/eduservice/teacher/")
+@CrossOrigin
 public class EduTeacherController {
 
     @Autowired
@@ -34,7 +35,7 @@ public class EduTeacherController {
     }
 
     //2.逻辑删除讲师
-    @DeleteMapping("{id}")
+    @DeleteMapping("delete/{id}")
     public R removeTeacher(@PathVariable String id){
         boolean flag = eduTeacherService.removeById(id);
         if(flag){
@@ -65,7 +66,7 @@ public class EduTeacherController {
                                  @PathVariable Long limit,
                                  @RequestBody TeacherQuery teacherQuery){
         //创建分页对象
-        Page<EduTeacher> pageParam = new Page<>();
+        Page<EduTeacher> pageParam = new Page<>(page, limit);
 
         //调用方法实现多条件分页
         eduTeacherService.pageQuery(pageParam, teacherQuery);
@@ -94,7 +95,7 @@ public class EduTeacherController {
     @GetMapping("/getById/{id}")
     public R getById(@PathVariable String id){
         EduTeacher eduTeacher = eduTeacherService.getById(id);
-        return R.ok().data("item", eduTeacher);
+        return R.ok().data("teacher", eduTeacher);
     }
 
     //7.修改讲师
