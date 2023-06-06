@@ -6,9 +6,9 @@ import lombok.Data;
 @Data
 public class DemoData {
 
-    @ExcelProperty("学号")
+    @ExcelProperty(value = "学号", index = 0)
     private Integer sno;
 
-    @ExcelProperty("姓名")
-    private Integer sName;
+    @ExcelProperty(value = "姓名", index = 1)
+    private String sname;
 }

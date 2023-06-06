@@ -944,3 +944,13 @@
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2023-06-05 23:23:14.312 [SpringContextShutdownHook] INFO 
                 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-06-06 23:08:46.914 [main] INFO 
+                com.zs.serviceedu.EduApplication - Starting EduApplication on LAPTOP-H0BRJLQN with PID 3944 (D:\WorkSpace\Java\guli_parent\service\service-edu\target\classes started by Mr. Zhangsun in D:\WorkSpace\Java\guli_parent)
+2023-06-06 23:08:46.920 [main] INFO 
+                com.zs.serviceedu.EduApplication - The following profiles are active: dev
+2023-06-06 23:08:47.638 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-06-06 23:08:47.641 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-06-06 23:08:47.661 [main] INFO 
+                o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
